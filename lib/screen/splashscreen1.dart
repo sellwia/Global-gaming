@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_global_gaming/screen/splashscreen3.dart';
 
 class SplashScreen1 extends StatelessWidget {
   const SplashScreen1({super.key});
@@ -54,7 +55,7 @@ class SplashScreen1 extends StatelessWidget {
 
               // Subtitle
               const Text(
-                'Main Game aja Di Global Gaming!, \n Gamenya Lengkap dan Seru Loh.',
+                'Main Game aja Di Global Gaming!',
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.white70,
@@ -64,6 +65,27 @@ class SplashScreen1 extends StatelessWidget {
               ),
               const SizedBox(height: 60),
 
+              Container(
+              margin: EdgeInsets.only(left: 40, right: 40),
+              child: SizedBox(
+                height: 40,
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    //route : material page route
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SplashScreen3()),
+                    );
+                    // panggil slide selanjutnya
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 250, 253, 250),
+                  ),
+                    child: Text("Next", style: TextStyle(fontSize: 14)),
+                ),
+              ),
+            ),
 
             ],
           ),

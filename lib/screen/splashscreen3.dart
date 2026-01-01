@@ -83,7 +83,7 @@ class SplashScreen3 extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  'Mulai Sekarang',
+                  'Login',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
@@ -113,7 +113,7 @@ class SplashScreen3 extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  'Masuk',
+                  'Join Member',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
