@@ -40,9 +40,9 @@ class SplashScreen3 extends StatelessWidget {
 
               // Title
               const Text(
-                'Global Gaming',
+                'Tunggu Apa Lagi?',
                 style: TextStyle(
-                  fontSize: 42,
+                  fontSize: 22,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
@@ -83,7 +83,7 @@ class SplashScreen3 extends StatelessWidget {
                   ),
                 ),
                 child: const Text(
-                  'Login',
+                  'Mulai Sekarang',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
