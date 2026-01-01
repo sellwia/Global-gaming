@@ -20,8 +20,15 @@ class LoginPage extends StatelessWidget {
         ),
 
         child: Center(
+        child: Container(
+          width: 380, // supaya rapi di web
+          padding: const EdgeInsets.all(24),
+          decoration: BoxDecoration(
+            color: Colors.white.withOpacity(0.08),
+            borderRadius: BorderRadius.circular(20),
+          ),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
 
               // Logo/Icon
@@ -144,11 +151,31 @@ class LoginPage extends StatelessWidget {
                     ),
                   SizedBox(height: 20), 
 
+                  // button login
 
+                  ElevatedButton(
+                    onPressed: () {}, 
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.blue[700],
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadiusGeometry.circular(12)
+                      ),
+                      elevation: 2,
+                    ),
+                    child: const Text(
+                      'Login',
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+
+                    SizedBox(height: 20), 
              ],
             ),
           ),  
         ),   
+      ),
     );
   }
 }
