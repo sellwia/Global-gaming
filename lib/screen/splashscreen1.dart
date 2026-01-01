@@ -23,6 +23,7 @@ class SplashScreen1 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+
               // Logo/Icon
               Container(
                 width: 120,
@@ -38,6 +39,32 @@ class SplashScreen1 extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 40),
+
+              // Title
+              const Text(
+                'Liburan Bingung Mau Ngapain?',
+                style: TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 16),
+
+              // Subtitle
+              const Text(
+                'Main Game aja Di Global Gaming!, \n Gamenya Lengkap dan Seru Loh.',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Colors.white70,
+                  fontWeight: FontWeight.w300,
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 60),
+
+
             ],
           ),
         ),
