@@ -95,6 +95,23 @@ class LoginPage extends StatelessWidget {
                               ),
                   ),
                 ),
+
+                SizedBox(height: 10), 
+
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                labelText: 'Password',
+                hintText : 'Masukkan Password Anda',
+                labelStyle: const TextStyle(color: Colors.white70),
+                hintStyle: const TextStyle(color: Colors.white38),
+                filled: true,
+                fillColor: Colors.white.withOpacity(0.15),
+                ),
+              ),
+
+                SizedBox(height: 20), 
+
              ],
             ),
           ),  
