@@ -63,7 +63,7 @@ class SplashScreen2 extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 60),
+              const SizedBox(height: 20),
 
               Container(
               margin: EdgeInsets.only(left: 40, right: 40),

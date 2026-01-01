@@ -34,7 +34,7 @@ class SplashScreen3 extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Icon(
-                  Icons.sports_esports,
+                  Icons.gamepad,
                   size: 100,
                   color: Colors.white,
                 ),
@@ -43,7 +43,7 @@ class SplashScreen3 extends StatelessWidget {
 
               // Title
               const Text(
-                'Global Gaming',
+                'Tunggu Apa Lagi?',
                 style: TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
@@ -55,7 +55,7 @@ class SplashScreen3 extends StatelessWidget {
 
               // Subtitle
               const Text(
-                'elajahi dunia gaming tanpa batas',
+                'Segera Jelajahi dunia gaming tanpa batas',
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.white70,
@@ -63,7 +63,7 @@ class SplashScreen3 extends StatelessWidget {
                 ),
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: 60),
+              const SizedBox(height: 20),
 
               Container(
               margin: EdgeInsets.only(left: 40, right: 40),
