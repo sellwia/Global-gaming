@@ -67,8 +67,8 @@ class LoginPage extends StatelessWidget {
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                labelText: 'Email',
-                hintText : 'Masukkan Email Anda',
+                labelText: 'ID Member',
+                hintText : 'Masukkan ID Member Anda',
                 labelStyle: const TextStyle(color: Colors.white70),
                 hintStyle: const TextStyle(color: Colors.white38),
                 filled: true,
@@ -83,15 +83,18 @@ class LoginPage extends StatelessWidget {
                 borderSide: BorderSide(color: Colors.grey[300]!)
                 ),
 
-                
-
-
- 
-           
-            ),
-          ),
- 
-
+                focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(
+                color: Colors.blue[700]!,
+                width: 2),
+                ),
+                  prefixIcon: Icon(
+                              Icons.person,
+                                size: 25.0,
+                              ),
+                  ),
+                ),
              ],
             ),
           ),  
