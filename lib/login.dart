@@ -133,6 +133,18 @@ class LoginPage extends StatelessWidget {
                             ),
                 SizedBox(height: 20), 
 
+                //lupa password
+                Align(
+                    alignment: Alignment.centerRight,
+                    child: TextButton(onPressed: (){},
+                    child: Text('Lupa Password?',
+                    style: TextStyle(color: Colors.white,fontSize: 14),
+                    ),
+                    ),
+                    ),
+                  SizedBox(height: 20), 
+
+
              ],
             ),
           ),  
