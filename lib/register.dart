@@ -66,3 +66,10 @@ class RegisterPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
+                 // ID Member
+                _inputField(
+                  label: 'ID Member',
+                  hint: 'Masukkan ID Member',
+                  icon: Icons.person,
+                ),
+                const SizedBox(height: 10),
