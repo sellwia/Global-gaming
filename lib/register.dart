@@ -73,3 +73,11 @@ class RegisterPage extends StatelessWidget {
                   icon: Icons.person,
                 ),
                 const SizedBox(height: 10),
+                // Email
+                _inputField(
+                  label: 'Email',
+                  hint: 'Masukkan Email',
+                  icon: Icons.email_outlined,
+                  keyboardType: TextInputType.emailAddress,
+                ),
+                const SizedBox(height: 10),
