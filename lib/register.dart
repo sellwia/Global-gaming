@@ -81,3 +81,11 @@ class RegisterPage extends StatelessWidget {
                   keyboardType: TextInputType.emailAddress,
                 ),
                 const SizedBox(height: 10),
+                // Password
+                _inputField(
+                  label: 'Password',
+                  hint: 'Masukkan Password',
+                  icon: Icons.lock_outline,
+                  obscureText: true,
+                ),
+                const SizedBox(height: 10),
