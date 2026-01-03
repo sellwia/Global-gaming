@@ -18,9 +18,10 @@ class RegisterPage extends StatelessWidget {
             ],
           ),
         ),
+
         child: Center(
           child: Container(
-            width: 380,
+            width: 380, // supaya rapi di web
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
               color: Colors.white.withOpacity(0.08),
@@ -29,7 +30,7 @@ class RegisterPage extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Icon
+                // Logo/Icon
                 Container(
                   width: 120,
                   height: 120,
@@ -38,8 +39,8 @@ class RegisterPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: const Icon(
-                    Icons.person_add_alt_1,
-                    size: 90,
+                    Icons.person_2_sharp,
+                    size: 100,
                     color: Colors.white,
                   ),
                 ),
@@ -49,47 +50,122 @@ class RegisterPage extends StatelessWidget {
                 const Text(
                   'Register',
                   style: TextStyle(
-                    fontSize: 42,
+                    fontSize: 45,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),
+                  textAlign: TextAlign.center,
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 16),
+
                 // Subtitle
                 const Text(
-                  'Silahkan Daftar Akun Baru',
+                  'Silahkan Registrasi Untuk Melanjutkan',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 18,
                     color: Colors.white70,
                     fontWeight: FontWeight.w300,
                   ),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(height: 20),
-                 // ID Member
-                _inputField(
-                  label: 'ID Member',
-                  hint: 'Masukkan ID Member',
-                  icon: Icons.person,
-                ),
-                const SizedBox(height: 10),
-                // Email
-                _inputField(
-                  label: 'Email',
-                  hint: 'Masukkan Email',
-                  icon: Icons.email_outlined,
+
+                TextField(
                   keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: 'ID Member',
+                    hintText: 'Masukkan ID Member Anda',
+                    labelStyle: const TextStyle(color: Colors.white70),
+                    hintStyle: const TextStyle(color: Colors.white38),
+                    filled: true,
+                    fillColor: Colors.white.withOpacity(0.15),
+
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.grey[300]!),
+                    ),
+
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Colors.blue[700]!,
+                        width: 2,
+                      ),
+                    ),
+                    prefixIcon: Icon(Icons.person, size: 25.0),
+                  ),
                 ),
-                const SizedBox(height: 10),
-                // Password
-                _inputField(
-                  label: 'Password',
-                  hint: 'Masukkan Password',
-                  icon: Icons.lock_outline,
+                SizedBox(height: 10),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: 'E-Mail',
+                    hintText: 'Masukkan E-Mail Anda',
+                    labelStyle: const TextStyle(color: Colors.white70),
+                    hintStyle: const TextStyle(color: Colors.white38),
+                    filled: true,
+                    fillColor: Colors.white.withOpacity(0.15),
+
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.grey[300]!),
+                    ),
+
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Colors.blue[700]!,
+                        width: 2,
+                      ),
+                    ),
+                    prefixIcon: Icon(Icons.email, size: 25.0),
+                  ),
+                ),
+
+                SizedBox(height: 10),
+
+                TextField(
                   obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Password',
+                    hintText: 'Masukkan Password Anda',
+                    labelStyle: const TextStyle(color: Colors.white70),
+                    hintStyle: const TextStyle(color: Colors.white38),
+                    filled: true,
+                    fillColor: Colors.white.withOpacity(0.15),
+
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(color: Colors.grey[300]!),
+                    ),
+
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                      borderSide: BorderSide(
+                        color: Colors.blue[700]!,
+                        width: 2,
+                      ),
+                    ),
+
+                    //icon
+                    prefixIcon: const Icon(Icons.lock_outline),
+                    suffixIcon: const Icon(Icons.visibility_outlined),
+                  ),
                 ),
-                const SizedBox(height: 10),
-                // Button Register
+                SizedBox(height: 20),
+                // button login
                 ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
@@ -97,26 +173,17 @@ class RegisterPage extends StatelessWidget {
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
+                      borderRadius: BorderRadiusGeometry.circular(12),
                     ),
+                    elevation: 2,
                   ),
                   child: const Text(
-                    'Register',
+                    'Daftar',
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                   ),
                 ),
-                const SizedBox(height: 16),
 
-                // Back to Login
-                TextButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  child: const Text(
-                    'Sudah punya akun? Login',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
+                SizedBox(height: 20),
               ],
             ),
           ),
@@ -124,3 +191,4 @@ class RegisterPage extends StatelessWidget {
       ),
     );
   }
+}

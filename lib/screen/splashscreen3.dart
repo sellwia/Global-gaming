@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_global_gaming/login.dart';
+import 'package:project_global_gaming/register.dart';
 
 class SplashScreen3 extends StatelessWidget {
   const SplashScreen3({super.key});
@@ -24,7 +25,6 @@ class SplashScreen3 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
               // Logo/Icon
               Container(
                 width: 120,
@@ -66,51 +66,53 @@ class SplashScreen3 extends StatelessWidget {
               const SizedBox(height: 20),
 
               Container(
-              margin: EdgeInsets.only(left: 40, right: 40),
-              child: SizedBox(
-                height: 40,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    //route : material page route
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => LoginPage()),
-                    );
-                    // panggil slide selanjutnya
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 250, 253, 250),
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: SizedBox(
+                  height: 40,
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      //route : material page route
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginPage()),
+                      );
+                      // panggil slide selanjutnya
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 250, 253, 250),
+                    ),
+                    child: Text(
+                      "Mulai Sekarang",
+                      style: TextStyle(fontSize: 14),
+                    ),
                   ),
-                    child: Text("Mulai Sekarang", style: TextStyle(fontSize: 14)),
                 ),
               ),
-            ),
               const SizedBox(height: 10),
 
-            Container(
-              margin: EdgeInsets.only(left: 40, right: 40),
-              child: SizedBox(
-                height: 40,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    //route : material page route
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => LoginPage()),
-                    );
-                    // panggil slide selanjutnya
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 250, 253, 250),
-                  ),
+              Container(
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: SizedBox(
+                  height: 40,
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      //route : material page route
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RegisterPage()),
+                      );
+                      // panggil slide selanjutnya
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 250, 253, 250),
+                    ),
                     child: Text("Join Member", style: TextStyle(fontSize: 14)),
+                  ),
                 ),
               ),
-            ),
               const SizedBox(height: 60),
-
             ],
           ),
         ),
