@@ -47,7 +47,7 @@ class RegisterPage extends StatelessWidget {
 
                 // Title
                 const Text(
-                  'REGISTER',
+                  'Register',
                   style: TextStyle(
                     fontSize: 42,
                     fontWeight: FontWeight.bold,
@@ -55,3 +55,14 @@ class RegisterPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 12),
+                // Subtitle
+                const Text(
+                  'Silahkan Daftar Akun Baru',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.white70,
+                    fontWeight: FontWeight.w300,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                const SizedBox(height: 20),
