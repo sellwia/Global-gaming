@@ -24,13 +24,12 @@ class SplashScreen2 extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-
               // Logo/Icon
               Container(
                 width: 120,
                 height: 120,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha: 200),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Icon(
@@ -66,27 +65,34 @@ class SplashScreen2 extends StatelessWidget {
               const SizedBox(height: 20),
 
               Container(
-              margin: EdgeInsets.only(left: 40, right: 40),
-              child: SizedBox(
-                height: 40,
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    //route : material page route
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => SplashScreen3()),
-                    );
-                    // panggil slide selanjutnya
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 250, 253, 250),
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: SizedBox(
+                  height: 40,
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      //route : material page route
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SplashScreen3(),
+                        ),
+                      );
+                      // panggil slide selanjutnya
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 250, 253, 250),
+                    ),
+                    child: Text(
+                      "Next",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
-                    child: Text("Next", style: TextStyle(fontSize: 14)),
                 ),
               ),
-            ),
-
             ],
           ),
         ),

@@ -30,7 +30,7 @@ class SplashScreen3 extends StatelessWidget {
                 width: 120,
                 height: 120,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha: 200),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Icon(
@@ -84,7 +84,10 @@ class SplashScreen3 extends StatelessWidget {
                     ),
                     child: Text(
                       "Mulai Sekarang",
-                      style: TextStyle(fontSize: 14),
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -108,7 +111,13 @@ class SplashScreen3 extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Color.fromARGB(255, 250, 253, 250),
                     ),
-                    child: Text("Join Member", style: TextStyle(fontSize: 14)),
+                    child: Text(
+                      "Join Member",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ),
               ),

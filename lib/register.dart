@@ -24,7 +24,7 @@ class RegisterPage extends StatelessWidget {
             width: 380, // supaya rapi di web
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.08),
+              color: Colors.white.withValues(alpha: 200),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
@@ -35,11 +35,11 @@ class RegisterPage extends StatelessWidget {
                   width: 120,
                   height: 120,
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.2),
+                    color: Colors.white.withValues(alpha: 200),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: const Icon(
-                    Icons.person_2_sharp,
+                    Icons.person_add,
                     size: 100,
                     color: Colors.white,
                   ),
@@ -78,7 +78,7 @@ class RegisterPage extends StatelessWidget {
                     labelStyle: const TextStyle(color: Colors.white70),
                     hintStyle: const TextStyle(color: Colors.white38),
                     filled: true,
-                    fillColor: Colors.white.withOpacity(0.15),
+                    fillColor: Colors.white.withValues(alpha: 200),
 
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12.0),
@@ -108,7 +108,7 @@ class RegisterPage extends StatelessWidget {
                     labelStyle: const TextStyle(color: Colors.white70),
                     hintStyle: const TextStyle(color: Colors.white38),
                     filled: true,
-                    fillColor: Colors.white.withOpacity(0.15),
+                    fillColor: Colors.white.withValues(alpha: 200),
 
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12.0),
@@ -140,7 +140,7 @@ class RegisterPage extends StatelessWidget {
                     labelStyle: const TextStyle(color: Colors.white70),
                     hintStyle: const TextStyle(color: Colors.white38),
                     filled: true,
-                    fillColor: Colors.white.withOpacity(0.15),
+                    fillColor: Colors.white.withValues(alpha: 200),
 
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12.0),
