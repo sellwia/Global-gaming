@@ -16,6 +16,9 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
 
   @override
   Widget build(BuildContext context) {
+    int hargaPerJam = hargaPS[psDipilih]!;
+    int total = hargaPerJam * jam;
+
     return Scaffold(
       backgroundColor: Colors.grey[100],
       body: Column(
@@ -68,6 +71,14 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      const Text(
+                        "Sewa PlayStation",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+
                       const SizedBox(height: 20),
 
                       const SizedBox(height: 20),
