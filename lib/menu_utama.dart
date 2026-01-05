@@ -130,6 +130,22 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                         ],
                       ),
                       const SizedBox(height: 5),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const Text(
+                            "Total Bayar",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            "Rp $total",
+                            style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
+                          ),
+                        ],
+                      ),
 
                       const Spacer(),
                     ],
