@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_global_gaming/test_firestore.dart';
 
 
 class MenuSewaPS extends StatefulWidget {
@@ -24,7 +23,6 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
   @override
 void initState() {
   super.initState();
-  testFirestore();
 }
 
   @override
