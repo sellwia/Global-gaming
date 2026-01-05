@@ -81,6 +81,21 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
 
                       const SizedBox(height: 20),
 
+                      /// PILIH PS
+                      const Text("Pilih PS"),
+                      DropdownButtonFormField<String>(
+                        initialValue: psDipilih,
+                        decoration: const InputDecoration(
+                          border: OutlineInputBorder(),
+                        ),
+                        items: hargaPS.keys.map((ps) {
+                          return DropdownMenuItem(value: ps, child: Text(ps));
+                        }).toList(),
+                        onChanged: (value) {
+                          setState(() => psDipilih = value!);
+                        },
+                      ),
+
                       const SizedBox(height: 20),
 
                       const Divider(),
