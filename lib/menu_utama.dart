@@ -8,11 +8,16 @@ class MenuSewaPS extends StatefulWidget {
 }
 
 class _MenuSewaPSState extends State<MenuSewaPS> {
-  String namaUser = "Krisno";
-  String psDipilih = "PS 3";
+  String namaUser = "Krisno Gatsusan";
+  String psDipilih = "PS 2";
   int jam = 1;
 
-  final Map<String, int> hargaPS = {"PS 3": 5000, "PS 4": 10000, "PS 5": 15000};
+  final Map<String, int> hargaPS = {
+    "PS 2": 3000,
+    "PS 3": 5000,
+    "PS 4": 10000,
+    "PS 5": 15000,
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +31,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
           /// HEADER
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(20, 50, 20, 30),
+            padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
             decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Colors.blue, Colors.blueAccent],
@@ -40,7 +45,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "Selamat Datang 👋",
+                  "SELAMAT DATANG  👋",
                   style: TextStyle(color: Colors.white70),
                 ),
                 Text(
@@ -64,6 +69,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
               child: Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
+                  side: const BorderSide(color: Colors.blue, width: 1.5),
                 ),
                 elevation: 4,
                 child: Padding(
@@ -72,7 +78,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
-                        "Sewa PlayStation",
+                        "Global Gamming PlayStation",
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -82,7 +88,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                       const SizedBox(height: 20),
 
                       /// PILIH PS
-                      const Text("Pilih PS"),
+                      const Text("PILIH PS"),
                       DropdownButtonFormField<String>(
                         initialValue: psDipilih,
                         decoration: const InputDecoration(
@@ -99,7 +105,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                       const SizedBox(height: 20),
 
                       /// PILIH JAM
-                      const Text("Durasi (Jam)"),
+                      const Text("DURASI (JAM)"),
                       Row(
                         children: [
                           IconButton(
@@ -109,7 +115,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                                 : null,
                           ),
                           Text(
-                            "$jam Jam",
+                            "$jam JAM",
                             style: const TextStyle(fontSize: 16),
                           ),
                           IconButton(
@@ -125,7 +131,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Text("Harga / Jam"),
+                          const Text("HARGA / JAM"),
                           Text("Rp $hargaPerJam"),
                         ],
                       ),
@@ -134,7 +140,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           const Text(
-                            "Total Bayar",
+                            "TOTAL BAYAR",
                             style: TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
@@ -155,6 +161,8 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                         height: 48,
                         child: ElevatedButton(
                           style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.blue,
+                            foregroundColor: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
                             ),
@@ -168,7 +176,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                               ),
                             );
                           },
-                          child: const Text("Sewa Sekarang"),
+                          child: const Text("SEWA SEKARANG"),
                         ),
                       ),
                     ],
