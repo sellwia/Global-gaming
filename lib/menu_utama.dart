@@ -121,6 +121,14 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
 
                       const Divider(),
 
+                      /// HARGA
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          const Text("Harga / Jam"),
+                          Text("Rp $hargaPerJam"),
+                        ],
+                      ),
                       const SizedBox(height: 5),
 
                       const Spacer(),
