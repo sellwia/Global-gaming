@@ -98,6 +98,27 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
 
                       const SizedBox(height: 20),
 
+                      /// PILIH JAM
+                      const Text("Durasi (Jam)"),
+                      Row(
+                        children: [
+                          IconButton(
+                            icon: const Icon(Icons.remove_circle_outline),
+                            onPressed: jam > 1
+                                ? () => setState(() => jam--)
+                                : null,
+                          ),
+                          Text(
+                            "$jam Jam",
+                            style: const TextStyle(fontSize: 16),
+                          ),
+                          IconButton(
+                            icon: const Icon(Icons.add_circle_outline),
+                            onPressed: () => setState(() => jam++),
+                          ),
+                        ],
+                      ),
+
                       const Divider(),
 
                       const SizedBox(height: 5),
