@@ -148,6 +148,29 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
                       ),
 
                       const Spacer(),
+
+                      /// TOMBOL
+                      SizedBox(
+                        width: double.infinity,
+                        height: 48,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                          ),
+                          onPressed: () {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  "Sewa $psDipilih - $jam jam\nTotal Rp $total",
+                                ),
+                              ),
+                            );
+                          },
+                          child: const Text("Sewa Sekarang"),
+                        ),
+                      ),
                     ],
                   ),
                 ),
