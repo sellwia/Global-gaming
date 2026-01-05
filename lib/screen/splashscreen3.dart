@@ -134,7 +134,7 @@ class SplashScreen3 extends StatelessWidget {
                       //route : material page route
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MenuUtama()),
+                        MaterialPageRoute(builder: (context) => MenuSewaPS()),
                       );
                       // panggil slide selanjutnya
                     },
