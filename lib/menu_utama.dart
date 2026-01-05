@@ -174,15 +174,24 @@ void initState() {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          onPressed: () {
+                          
+                          onPressed: () async {
+                            await SewaService.simpanSewa(
+                              namaUser: namaUser,
+                              ps: psDipilih,
+                              jam: jam,
+                              hargaJam: hargaPS[psDipilih]!,
+                              total: total,
+                            );
+
                             ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text(
-                                  "Sewa $psDipilih - $jam jam\nTotal Rp $total",
-                                ),
+                              const SnackBar(
+                                content: Text("Sewa berhasil disimpan"),
+                                backgroundColor: Colors.green,
                               ),
                             );
                           },
+
                           child: const Text("SEWA SEKARANG"),
                         ),
                       ),
