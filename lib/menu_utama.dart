@@ -8,7 +8,7 @@ class MenuSewaPS extends StatefulWidget {
 }
 
 class _MenuSewaPSState extends State<MenuSewaPS> {
-  String namaUser = "Krisno Gatsusan";
+  String namaUser = "Krisno";
   String psDipilih = "PS 3";
   int jam = 1;
 
@@ -23,7 +23,7 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
           /// HEADER
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+            padding: const EdgeInsets.fromLTRB(20, 50, 20, 30),
             decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Colors.blue, Colors.blueAccent],
@@ -53,6 +53,36 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
           ),
 
           const SizedBox(height: 20),
+
+          /// CARD SEWA
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                elevation: 4,
+                child: Padding(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: 20),
+
+                      const SizedBox(height: 20),
+
+                      const Divider(),
+
+                      const SizedBox(height: 5),
+
+                      const Spacer(),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
