@@ -52,7 +52,7 @@ void initState() {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "SELAMAT DATANG  👋",
+                  "SELAMAT DATANG ",
                   style: TextStyle(color: Colors.white70),
                 ),
                 Text(
