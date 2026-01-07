@@ -28,16 +28,17 @@ class SplashScreen3 extends StatelessWidget {
             children: [
               // Logo/Icon
               Container(
-                width: 120,
+                width: 200,
                 height: 120,
                 decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 200),
+                  color: Colors.white.withValues(alpha: 100),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: const Icon(
-                  Icons.gamepad,
-                  size: 100,
-                  color: Colors.white,
+                child: Image.asset(
+                  '../assets/images/sp3.png',
+                  width: 90,
+                  height: 90,
+                  fit: BoxFit.contain,
                 ),
               ),
               const SizedBox(height: 40),
