@@ -10,6 +10,19 @@ class TeamPage extends StatelessWidget {
         title: const Text('Daftar Anggota Tim'),
         backgroundColor: Colors.deepPurple,
       ),
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Colors.deepPurple.shade900,
+              Colors.deepPurple.shade600,
+              Colors.purple.shade500,
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
