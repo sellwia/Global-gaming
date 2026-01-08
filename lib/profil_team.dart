@@ -72,6 +72,20 @@ class TeamBox extends StatelessWidget {
           ),
         ],
       ),
+      child: Column(
+        children: [
+          // FOTO
+          ClipRRect(
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
+            child: Image.asset(
+              image,
+              height: 120,
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
