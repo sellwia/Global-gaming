@@ -152,6 +152,36 @@ class SplashScreen3 extends StatelessWidget {
                   ),
                 ),
               ),
+
+              const SizedBox(height: 10),
+
+              Container(
+                margin: EdgeInsets.only(left: 40, right: 40),
+                child: SizedBox(
+                  height: 40,
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      //route : material page route
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MenuSewaPS()),
+                      );
+                      // panggil slide selanjutnya
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 250, 253, 250),
+                    ),
+                    child: Text(
+                      "Profil Team",
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
               const SizedBox(height: 60),
             ],
           ),
