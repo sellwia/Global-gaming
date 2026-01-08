@@ -31,9 +31,8 @@ class TeamPage extends StatelessWidget {
             childAspectRatio: 0.78,
             children: const [
               TeamBox(
-                nama: 'Andi Pratama',
-                nim: '22123456',
-                jabatan: 'Admin',
+                nama: 'Krisno Gatsusan Wijaya Kusuma',
+                nim: '1125170077',
                 image: '../assets/images/krisno.jpeg',
               ),
             ],
@@ -47,14 +46,12 @@ class TeamPage extends StatelessWidget {
 class TeamBox extends StatelessWidget {
   final String nama;
   final String nim;
-  final String jabatan;
   final String image;
 
   const TeamBox({
     super.key,
     required this.nama,
     required this.nim,
-    required this.jabatan,
     required this.image,
   });
 
@@ -106,18 +103,6 @@ class TeamBox extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(
                     horizontal: 10,
                     vertical: 4,
-                  ),
-                  decoration: BoxDecoration(
-                    color: Colors.deepPurple,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Text(
-                    jabatan,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                    ),
                   ),
                 ),
               ],
