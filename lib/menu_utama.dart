@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_global_gaming/services/sewa_service.dart';
 
-
 class MenuSewaPS extends StatefulWidget {
   const MenuSewaPS({super.key});
 
@@ -22,9 +21,9 @@ class _MenuSewaPSState extends State<MenuSewaPS> {
   };
 
   @override
-void initState() {
-  super.initState();
-}
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -174,8 +173,10 @@ void initState() {
                               borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                          
+
                           onPressed: () async {
+                            final messenger = ScaffoldMessenger.of(context);
+
                             await SewaService.simpanSewa(
                               namaUser: namaUser,
                               ps: psDipilih,
@@ -184,7 +185,7 @@ void initState() {
                               total: total,
                             );
 
-                            ScaffoldMessenger.of(context).showSnackBar(
+                            messenger.showSnackBar(
                               const SnackBar(
                                 content: Text("Sewa berhasil disimpan"),
                                 backgroundColor: Colors.green,

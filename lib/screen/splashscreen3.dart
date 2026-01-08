@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_global_gaming/login.dart';
+import 'package:project_global_gaming/profil_team.dart';
 import 'package:project_global_gaming/register.dart';
 import 'package:project_global_gaming/menu_utama.dart';
 
@@ -165,7 +166,7 @@ class SplashScreen3 extends StatelessWidget {
                       //route : material page route
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MenuSewaPS()),
+                        MaterialPageRoute(builder: (context) => TeamPage()),
                       );
                       // panggil slide selanjutnya
                     },
