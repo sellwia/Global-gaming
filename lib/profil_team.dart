@@ -34,7 +34,7 @@ class TeamPage extends StatelessWidget {
                 nama: 'Andi Pratama',
                 nim: '22123456',
                 jabatan: 'Admin',
-                image: '../assets/images/sp1.png',
+                image: '../assets/images/krisno.jpeg',
               ),
             ],
           ),
@@ -74,7 +74,6 @@ class TeamBox extends StatelessWidget {
       ),
       child: Column(
         children: [
-          // FOTO
           ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
             child: Image.asset(
@@ -82,6 +81,46 @@ class TeamBox extends StatelessWidget {
               height: 120,
               width: double.infinity,
               fit: BoxFit.cover,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Padding(
+            padding: const EdgeInsets.all(8),
+            child: Column(
+              children: [
+                Text(
+                  nama,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'NIM: $nim',
+                  style: TextStyle(fontSize: 12, color: Colors.grey[700]),
+                ),
+                const SizedBox(height: 4),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 4,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.deepPurple,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: Text(
+                    jabatan,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
         ],
