@@ -102,7 +102,7 @@ class TeamBox extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   'NIM: $nim',
-                  style: TextStyle(fontSize: 12, color: Colors.grey[700]),
+                  style: TextStyle(fontSize: 12, color: Colors.grey[700], fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 4),
                 Container(
