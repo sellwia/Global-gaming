@@ -81,7 +81,7 @@ class TeamBox extends StatelessWidget {
             borderRadius: const BorderRadius.vertical(top: Radius.circular(16)),
             child: Image.asset(
               image,
-              height: 120,
+              height: 180,
               width: double.infinity,
               fit: BoxFit.cover,
             ),
