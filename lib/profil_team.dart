@@ -47,6 +47,12 @@ class TeamPage extends StatelessWidget {
                 nim: '123456789',
                 image: '../assets/images/Selly.jpeg',
               ),
+
+              TeamBox(
+                nama: 'Udin',
+                nim: '123456789',
+                image: '../assets/images/Selly.jpeg',
+              ),
             ],
           ),
         ),
